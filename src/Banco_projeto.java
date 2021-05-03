@@ -17,5 +17,15 @@ public class Banco_projeto {
             return 1;
         }
     }
+    public int saque(double valor){
+        if(valor<=saldoBanco){
+            saldoBanco-=valor;
+            return 1;
+        }
+        else{
+            return 0;
+        }
+
+    }
 
 }
