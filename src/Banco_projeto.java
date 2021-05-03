@@ -23,7 +23,7 @@ public class Banco_projeto {
         }
     }
     public int saque(double valor){
-        if(valor<=saldoBanco){
+        if(valor<=saldoBanco && valor > 0){
             saldoBanco-=valor;
             return 1;
         }
