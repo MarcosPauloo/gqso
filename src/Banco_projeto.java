@@ -8,6 +8,14 @@ public class Banco_projeto {
     public double saldo(){
         return saldoBanco;
     }
-
+    public int deposito(double valor){
+        if(valor<=0){
+            return 0;
+        }
+        else{
+            saldoBanco+=valor;
+            return 1;
+        }
+    }
 
 }
